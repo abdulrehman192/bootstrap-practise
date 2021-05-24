@@ -431,13 +431,118 @@
             </div>
         </div>
     </div>
-    <div class="dropdown">
-        <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">dropdown</button>
-        <div class="dropdown-menu" aria-labelledby="dropdown">
-            <a href="#" class="dropdown-item">Item 1</a>
+    <br><br>
+    <div class="container">
+        <div class="carousel slide" id="carousel" data-ride="false">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+                <li data-target="#carousel" data-slide-to="3"></li>
+                <li data-target="#carousel" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/gallery-5.jpg" alt="Slide 1" class="d-block img-fluid">
+                    <div class="carousel-caption">
+                        <h3>Caption</h3>
+                        <p>This Text Represent Slide 1</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/gallery-6.jpg" alt="Slide 2" class="d-block img-fluid">
+                    <div class="carousel-caption">
+                        <h3>Caption</h3>
+                        <p>This Text Represent Slide 2</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/gallery-7.jpg" alt="Slide 3" class="d-block img-fluid">
+                    <div class="carousel-caption">
+                        <h3>Caption</h3>
+                        <p>This Text Represent Slide 3</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/gallery-8.jpg" alt="Slide 4" class="d-block img-fluid">
+                    <div class="carousel-caption">
+                        <h3>Caption</h3>
+                        <p>This Text Represent Slide 4</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/gallery-9.jpg" alt="Slide 5" class="d-block img-fluid">
+                    <div class="carousel-caption">
+                        <h3>Caption</h3>
+                        <p>This Text Represent Slide 5</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#carousel" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            <a href="#carousel" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
+    <br><br>
+    <h1>Collapse</h1>
+    <div class="container">
+        <h2>Show and hide other content with link using the "href" attribute</h2>
+        <a href="#hrefCollapse" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="hrefCollapse"> Link With href</a>
+        <div id="hrefCollapse" class="collapse">
+            <div class="alert alert-success">
 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.</div>
+        </div>
+        <h2>Show and hide other content with button using the "data-target" attribute</h2>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#targetCollapse" aria-expanded="false" aria-controls="targetCollapse"> Button with Data Target</button>
+        <div id="targetCollapse" class="collapse">
+            <div class="alert alert-success">
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.</div>
+        </div>
+        <br><br>
+        <h2>Accordion using the collapse component</h2>
+        <div class="accordion" id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingone">
+                    <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseone" aria-expanded="false" aria-controls="collapseone"> Heading One</button>
+                </div>
+                <div id="collapseone">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc. Donec blandit accumsan augue eu bibendum.
+                        Suspendisse pretium facilisis sapien, ac dignissim leo. Phasellus fermentum nulla eget quam congue sagittis. Donec volutpat vel sapien sit amet lobortis. Aenean non vulputate nunc, eu luctus libero.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingtwo">
+                    <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo"> Heading Two</button>
+                </div>
+                <div id="collapsetwo">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc. Donec blandit accumsan augue eu bibendum.
+                        Suspendisse pretium facilisis sapien, ac dignissim leo. Phasellus fermentum nulla eget quam congue sagittis. Donec volutpat vel sapien sit amet lobortis. Aenean non vulputate nunc, eu luctus libero.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingthree">
+                    <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapsethree" aria-expanded="false" aria-controls="collapsethree"> Heading Three</button>
+                </div>
+                <div id="collapsethree">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc. Donec blandit accumsan augue eu bibendum.
+                        Suspendisse pretium facilisis sapien, ac dignissim leo. Phasellus fermentum nulla eget quam congue sagittis. Donec volutpat vel sapien sit amet lobortis. Aenean non vulputate nunc, eu luctus libero.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <br><br>
     <!-- first of all call jquery, popper.js , bootstrap.bundle.min.js and lastly self js file -->
