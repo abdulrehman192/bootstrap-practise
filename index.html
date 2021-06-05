@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Bootstrap Practise</title>
@@ -850,8 +851,69 @@
             <li class="page-item"><a href="#" class="page-link">5</a></li>
             <li class="page-item"><a href="#" class="page-link">Next</a></li>
         </ul>
-        <h2>PopOvers</h2>
-        <a href="#" data-toggle="popover" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo" data-original-title="Popover Title">popover with button</a>
+
+    </div>
+    <h1>Progress</h1>
+    <div class="container">
+        <h2>Simple progess bar</h2>
+        <div class="progress">
+            <div class="progress-bar w-25" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25">25%</div>
+        </div>
+        <h2>Color progess bar</h2>
+        <div class="progress">
+            <div class="progress-bar w-25 bg-success" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25">25%</div>
+        </div>
+        <h2>Stripped progess bar</h2>
+        <div class="progress">
+            <div class="progress-bar w-25 progress-bar-striped" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25">25%</div>
+        </div>
+        <h2>Stripped Animated progess bar</h2>
+        <div class="progress">
+            <div class="progress-bar w-25 progress-bar-striped progress-bar-animated" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25">25%</div>
+        </div>
+    </div>
+    <h1>Spinners</h1>
+    <div class="container">
+        <h2>Border Spinner</h2>
+        <div class="spinner-border"></div>
+        <h2>Border spinner colors</h2>
+        <div class="spinner-border text-primary"></div>
+        <div class="spinner-border text-info"></div>
+        <div class="spinner-border text-success"></div>
+        <div class="spinner-border text-warning"></div>
+        <div class="spinner-border text-danger"></div>
+        <div class="spinner-border text-dark"></div>
+        <div class="spinner-border text-light"></div>
+        <h2>Spinner inside button</h2>
+        <button type="button" class="btn btn-primary" disabled><span class="spinner-border text-light spinner-border-sm" aria-hidden="true"> </span> Spinner Inside Button</button>
+        <h2>Growing Spinner </h2>
+        <div class="spinner-grow"></div>
+    </div>
+    <h1>Toasts</h1>
+    <div class="container">
+        <h2>Basic toast (with 3000 ms delay)</h2>
+        <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true" data-delay="3000">
+            <div class="toast-header">
+                <strong class="mr-auto">Toast Header</strong>
+                <small>9 minutes ago</small>
+            </div>
+            <div class="toast-body">
+                Toast body text goes here
+            </div>
+        </div>
+        <h2>Basic toast (without autohide and animation)</h2>
+        <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true" data-delay="3000" data-autohide="false">
+            <div class="toast-header">
+                <strong class="mr-auto">Toast Header</strong>
+                <small>9 minutes ago</small>
+                <button type="button" class="close ml-2 mb-1" aria-label="Close" data-dismiss="toast">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">
+                Toast body text goes here
+            </div>
+        </div>
     </div>
     <br><br>
     <!-- first of all call jquery, popper.js , bootstrap.bundle.min.js and lastly self js file -->
